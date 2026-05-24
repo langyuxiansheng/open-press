@@ -1,0 +1,28 @@
+{
+  "name": "@open-press/react",
+  "version": "0.1.0",
+  "description": "React adapter for OpenPress.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@open-press/core": "workspace:*",
+    "@open-press/designer-core": "workspace:*",
+    "@open-press/renderer": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  }
+}

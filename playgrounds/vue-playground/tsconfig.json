@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "types": ["vite/client"],
+    "paths": {
+      "@open-press/core": ["../../packages/core/src/index.ts"],
+      "@open-press/renderer": ["../../packages/renderer/src/index.ts"],
+      "@open-press/designer-core": ["../../packages/designer-core/src/index.ts"],
+      "@open-press/vue": ["../../packages/vue/src/index.ts"]
+    }
+  },
+  "include": ["src", "../../examples/basic-template.ts"]
+}
